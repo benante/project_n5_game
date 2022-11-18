@@ -1,0 +1,38 @@
+* {
+    text-align: center;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+header em {
+    font-size: 150px;
+}
+img {
+    margin: 20px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 30%;
+    
+}
+.icon:hover {
+    transition: 200ms;
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 10px 16px teal;
+}
+.game {
+    position: relative;
+}
+.user_container {
+    position: absolute;
+    width: 100%;
+    top: 500px;    
+}
+.highlight { 
+    background-color: rgb(253, 246, 51); 
+    box-shadow: 10px 16px teal;
+}
+.hide {
+    display: none;
+}
