@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Rock Paper Scissors</title>
   </head>
   <body>
@@ -12,14 +18,35 @@
       <h1><em>Rock Paper Scissors</em></h1>
       while you wait for your connection to come back
     </header>
-    <div class="score"></div>
+
     <div class="game">
-        <img src="" class="hide" alt="random_pic" id="random">
-      <div class="user_container">
-        <img class="user_pic icon" src="/static/rock.png" alt="rock" id="rock" />
-        <img class="user_pic icon" src="/static/paper.png" alt="paper" id="paper" />
-        <img class="user_pic icon" src="/static/scissors.png" alt="scissors" id="scissors" />
+      <div class="computer_container">
+        <img src="" class="hide" alt="random_pic" id="random" />
       </div>
+      <div class="result">
+        <span></span>
+      </div>
+      <div class="user_container">
+        <img
+          class="user_pic icon"
+          src="/static/rock.png"
+          alt="rock"
+          id="rock"
+        />
+        <img
+          class="user_pic icon"
+          src="/static/paper.png"
+          alt="paper"
+          id="paper"
+        />
+        <img
+          class="user_pic icon"
+          src="/static/scissors.png"
+          alt="scissors"
+          id="scissors"
+        />
+      </div>
+      <button class="again">Start again</button>
     </div>
     <script src="app.js"></script>
   </body>

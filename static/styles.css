@@ -2,37 +2,42 @@
     text-align: center;
 }
 html, body {
-    margin: 0;
+    /* Keep body full screen */
+    margin: 0 auto;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 header em {
     font-size: 150px;
 }
+div {
+    min-height: 300px;
+}
+
 img {
-    margin: 20px;
     width: 200px;
     padding: 20px;
     border-radius: 30%;
-    
+}
+span {
+    font-size: 150px;
+}
+button {
+    border-radius: 10px;
+    background-color: inherit;
+    width: 100px;
 }
 .icon:hover {
     transition: 200ms;
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
     box-shadow: 10px 16px teal;
 }
-.game {
-    position: relative;
-}
-.user_container {
-    position: absolute;
-    width: 100%;
-    top: 500px;    
-}
+
 .highlight { 
-    background-color: rgb(253, 246, 51); 
     box-shadow: 10px 16px teal;
 }
 .hide {
-    display: none;
+    visibility: hidden;
 }
+
