@@ -1,43 +1,85 @@
+/* CONTAINERS*/
 * {
-    text-align: center;
+  text-align: center;
 }
-html, body {
-    /* Keep body full screen */
-    margin: 0 auto;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-}
-header em {
-    font-size: 150px;
+html,
+body {
+  /* Keep body full screen */
+  font-size: 1em;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 div {
-    min-height: 300px;
+  min-height: 12em;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-img {
-    width: 200px;
-    padding: 20px;
-    border-radius: 30%;
+/* FONTS */
+header em {
+  font-size: 4em;
 }
 span {
-    font-size: 150px;
+  font-size: 8em;
 }
-button {
-    border-radius: 10px;
-    background-color: inherit;
-    width: 100px;
+
+/* IMGS */
+img {
+  max-width: 250px;
+  padding: 20px;
+  border-radius: 30%;
 }
 .icon:hover {
-    transition: 200ms;
-    transform: scale(1.05);
-    cursor: pointer;
-    box-shadow: 10px 16px teal;
+  transition: 200ms;
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 10px 16px teal;
 }
-
-.highlight { 
-    box-shadow: 10px 16px teal;
+.highlight {
+  box-shadow: 10px 16px teal;
 }
 .hide {
-    visibility: hidden;
+  visibility: hidden;
 }
 
+/* BUTTON */
+button {
+  margin-top: 3em;
+  border-radius: 10px;
+  background-color: black;
+  color: whitesmoke;
+  min-height: 3em;
+  width: 15em;
+  font-size: 1.1em;
+}
+
+/* MEDIA Phone */
+@media (max-width: 320px) {
+  header {
+    font-size: 0.5em;
+  }
+  span {
+    font-size: 3em;
+  }
+  button {
+    width: 8em;
+  }
+  .user_container {
+    flex-wrap: wrap;
+  }
+  img {
+    max-width: 40%;
+  }
+
+}
+@media (max-width: 850px) {
+    header {
+        font-size: 0.8em;
+      }
+    img {
+        max-width: 30%;
+      }
+}
