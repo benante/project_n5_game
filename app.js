@@ -18,7 +18,7 @@ selection_imgs.forEach((img) => {
       let user_item = img.id;
       let selectedItem = document.getElementById(user_item);
       selectedItem.classList.add("highlight");
-      roll_dice()
+      roll_dice();
       setTimeout(() => {
         let computer_item = items[random()];
         let result = scoring(combinations, user_item, computer_item);
@@ -48,10 +48,10 @@ function scoring(combinations, user_item, computer_item) {
   return combinations[user_item][computer_item];
 }
 
-// Get random computer choice 
+// Get random computer choice
 function random() {
   let random = Math.floor(Math.random() * 3);
-  pic.src = "/static/" + items[random] + ".png";
+  pic.src = "static/" + items[random] + ".png";
   return random;
 }
 
@@ -61,7 +61,7 @@ function roll_dice() {
   image.classList.toggle("hide");
   let temporary_roll = setInterval(function () {
     let random = Math.floor(Math.random() * 3);
-    image.src = "/static/" + items[random] + ".png";
+    image.src = "static/" + items[random] + ".png";
   }, 40);
   setTimeout(function () {
     clearInterval(temporary_roll);
