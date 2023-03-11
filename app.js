@@ -11,6 +11,7 @@ const selection_imgs = document.querySelectorAll(".user_pic");
 const random_pic = document.getElementById("random");
 const button = document.querySelector("button");
 const pic = document.getElementById("random");
+const computer = document.getElementById("computer");
 
 selection_imgs.forEach((img) => {
   img.addEventListener("click", () => {
@@ -31,10 +32,11 @@ selection_imgs.forEach((img) => {
 
 button.addEventListener("click", () => {
   if (game == false) {
+    computer.classList.toggle("hide");
     pic.classList.toggle("hide");
     let remove = document.getElementsByClassName("highlight")[0];
     remove.classList.remove("highlight");
-    document.querySelector("span").innerHTML = "";
+    document.querySelector("span").innerHTML = "VS";
   }
   game = true;
 });
@@ -51,17 +53,18 @@ function scoring(combinations, user_item, computer_item) {
 // Get random computer choice
 function random() {
   let random = Math.floor(Math.random() * 3);
-  pic.src = "static/" + items[random] + ".png";
+  pic.src = "./static/" + items[random] + ".png";
   return random;
 }
 
 // Simple "rolling dice" visual effect
 function roll_dice() {
-  let image = document.getElementById("random");
-  image.classList.toggle("hide");
+  // let image = document.getElementById("random");
+  computer.classList.toggle("hide");
+  pic.classList.toggle("hide");
   let temporary_roll = setInterval(function () {
     let random = Math.floor(Math.random() * 3);
-    image.src = "static/" + items[random] + ".png";
+    pic.src = "./static/" + items[random] + ".png";
   }, 40);
   setTimeout(function () {
     clearInterval(temporary_roll);
