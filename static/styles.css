@@ -1,10 +1,9 @@
-/* CONTAINERS*/
+/* BODY & DIVS*/
 * {
   text-align: center;
 }
 html,
 body {
-  /* Keep body full screen */
   font-size: 1vw;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
@@ -48,7 +47,7 @@ img {
   border-radius: 0;
 }
 
-/* BUTTON */
+/* BUTTONS */
 button {
   margin-top: 3em;
   border-radius: 10px;
@@ -61,7 +60,7 @@ button {
 
 /* MEDIA Phone */
 @media (max-width: 600px) {
-  .user_container {
+  .user-container {
     flex-wrap: wrap;
     flex-direction: column;
   }
